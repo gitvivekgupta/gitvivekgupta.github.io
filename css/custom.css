@@ -136,3 +136,69 @@ footer a:hover {
   line-height: 1.7;
   color: #333;
 }
+
+/* Floating Blog CTA */
+
+.blog-cta-container{
+    position: fixed;
+    top: 140px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+}
+
+.blog-cta{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.blog-cta i{
+    font-size: 18px;
+}
+
+/* Medium Button */
+.blog-cta.medium{
+    background:#000;
+}
+
+/* Quora Button */
+.blog-cta.quora{
+    background:#b92b27;
+}
+
+.blog-cta:hover{
+    transform: translateX(-4px);
+    text-decoration: none;
+    opacity:0.9;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .blog-cta-container{
+        top:auto;
+        bottom:20px;
+        right:10px;
+    }
+
+    .blog-cta span{
+        display:none;
+    }
+
+    .blog-cta{
+        padding:12px;
+        border-radius:50%;
+    }
+
+}
